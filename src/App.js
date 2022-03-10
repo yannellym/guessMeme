@@ -24,7 +24,6 @@ function App() {
   const [choiceTwo, setChoiceTwo] = useState(null)
   const [disabled, setDisabled] = useState(false)
   const [score, setScore] = useState(0)
-  const [youWin, setYouWin] = useState(false)
 
   const shuffleCards = () => {
   const shuffledCards = [...cardImages, ...cardImages]
