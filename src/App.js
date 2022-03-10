@@ -70,7 +70,7 @@ useEffect(() => {
       setTimeout(() => resetTurn(), 1000)
     }
   }
-}, [choiceOne, choiceTwo])
+}, [choiceOne, choiceTwo, celebration])
 console.log(cards)
 
 //reset choice and increase turn
