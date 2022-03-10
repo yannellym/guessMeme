@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
+body{
+    font-family: 'Marmelad', sans-serif;
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: #ffffff; 
+}
+.App{
+    max-width: 860px;
+    margin: 40px auto;
+}
+.startGame{
+    background: none;
+    border: 3px solid #20e606;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+}
+.startGame:hover{
+    background: #09ff00;
+    color: black;
+}
+.card-grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+span{ 
+    color: #09ff00;
+    margin-left: 5rem;
+}
+.winImg{
+    width: 60%;
+    height:30rem;
+    padding-top: 2%;
+}
+.reload{
+    background: red;
+    border: 3px solid #ffffff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+}
+.blackedOut{
+    display: none;
+}
