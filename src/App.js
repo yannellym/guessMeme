@@ -63,14 +63,13 @@ useEffect(() => {
       })
       console.log("cards do match")
       setScore(prevScore=> prevScore +1)
-      celebration()
       resetTurn()
     } else {
       console.log("they dont match :(")
       setTimeout(() => resetTurn(), 1000)
     }
-  }
-}, [choiceOne, choiceTwo, celebration])
+  } 
+}, [choiceOne, choiceTwo])
 console.log(cards)
 
 //reset choice and increase turn
@@ -90,14 +89,6 @@ useEffect(() => {
 
 //confetti function
 const jsConfetti = new JSConfetti()
-let celebration = () => {
-    jsConfetti.addConfetti({
-    emojis: ['👍🏽'],
-    emojiSize: 200,
-    confettiNumber: 1,
- })
-}
-
 let winningCelebration = () => {
   jsConfetti.addConfetti({
   emojiSize: 200,
