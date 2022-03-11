@@ -112,7 +112,7 @@ function refreshPage() {
   return (
     <div className="App">
       <h1>Match The Meme</h1>
-            <button onClick={shuffleCards} className="startGame">New Game</button>
+            <button onClick={shuffleCards} className={score >=8? "blackedOut": "startGame"}>New Game</button>
             <p>Turns: {turns}  <span>Score: {score}</span></p>
             {score >=8? youWon():
             <div className="card-grid">
